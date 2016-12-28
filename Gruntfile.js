@@ -3,7 +3,9 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         less: {
             options: {
-                paths: ['less']
+                paths: ['less'],
+                sourceMap: true,
+                sourceMapRootpath: '../../'
             },
             //以下的comileCore為一組，可以依需求增加
             compileCore: {
